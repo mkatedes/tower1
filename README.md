@@ -6,7 +6,7 @@
 <li>montañas(andes?)</li>
 <li>prairie</li>
 
-<ul><h2>perso base</h2></ul>
+<ul><h2>Perso base</h2></ul>
 <li>rey/reina</li>
 Non combatible perso que da bonus pasivos
 <li>ingeniero</li>
@@ -24,4 +24,9 @@ Personages que aparecen como eventos random aportando bonus unicos
 <li>Chaski</li>
 <li>Jinete</li>
 
-
+<ul><h2>Tropas</h2></ul>
+<li>Scoot</li>
+<li>arqueros</li>
+Pueden renfonzar la fuerza de una torre
+<li>albañil</li>
+Repara los edificios
