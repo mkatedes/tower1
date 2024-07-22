@@ -30,3 +30,25 @@ Personages que aparecen como eventos random aportando bonus unicos
 Pueden renfonzar la fuerza de una torre
 <li>albañil</li>
 Repara los edificios
+
+<ul><h2>Mejoras(reliquias/sciencias/magias)</h2></ul>
+<li>Druidas</li>
+Magia natural, Crown Control y veneno
+<li>Piromanos</li>
+Magia de fuego, AOE/DPS
+<li>Zoologista</li>
+Rango corto, durabilidad baja, barata
+->insectologo (rango y aerea ++)
+<li>Alquimistas</li>
+Pociones, Support
+<li>Tech steampunk</li>
+Stats elevadas y equilibradas, cara
+<li>Necromancia/li>
+Tank
+
+<li>piedra de Sisifo</li>
+Magia de tierra, CC y daño pesado
+<li>Fragmento de Mjolnir</li>
+Daño electrico, high DPS single tarjet
+<li>Pluma de Quetzalcóatl</li>
+Buff de celeridad 
