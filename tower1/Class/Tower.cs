@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace tower1.Class
 {
@@ -8,14 +8,15 @@ namespace tower1.Class
     {
         public int _damage;
         public int _range;
-        public int _fireRate;
+        public double _fireRate;
         public int _cost;
         public string _type;
         public string _description;
-        public Texture2D _bulletSprite;
+        public Texture2D _bulletSprite; 
+        public double LastShootTime;
 
         public Tower(string name, Texture2D sprite, Vector2 position, int damage, int range, 
-            int fireRate, int cost, string type, string description, Texture2D bulletSprite)
+            double fireRate, int cost, string type, string description, Texture2D bulletSprite)
             : base(name, sprite, position)
         {
             _damage = damage;
@@ -27,12 +28,30 @@ namespace tower1.Class
             _description = description;
             _sprite = sprite;
             _bulletSprite = bulletSprite;
+            LastShootTime = 0;
         }
 
-        public async Task Shoot()
+        public void Shoot(Enemy enemy)
         {
-            await Task.Delay(this._fireRate);   
-
+            enemy._health -= this._damage;
         }
+
+        public bool CanShoot(Enemy enemy, GameTime gameTime)
+        {
+            // Convertissez le temps de recharge en secondes
+            double cooldown = _fireRate;
+            double timeSinceLastShoot = gameTime.TotalGameTime.TotalSeconds - LastShootTime;
+            // Si le temps écoulé depuis le dernier tir est supérieur ou égal au temps de recharge
+            // et que la distance entre la tour et l'ennemi est inférieure à la portée de la tour
+            if (timeSinceLastShoot >= cooldown &&
+                Vector2.Distance(this._position, enemy._position) < this._range)
+            {
+                this.Shoot(enemy);
+                LastShootTime = gameTime.TotalGameTime.TotalSeconds;
+                return true;
+            }
+            return false;
+        }
+
     }
 }

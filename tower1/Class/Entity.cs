@@ -15,5 +15,10 @@ namespace tower1.Class
             _sprite = sprite;
             _position = position;
         }
+
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(_sprite, _position, Color.White);
+        }
     }
 }
