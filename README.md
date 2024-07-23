@@ -52,3 +52,14 @@ Magia de tierra, CC y daño pesado
 Daño electrico, high DPS single tarjet
 <li>Pluma de Quetzalcóatl</li>
 Buff de celeridad 
+
+
+<ul><h2>Duales</h2></ul>
+<li>Palo santo</li>
+Druidas/zoologista
+<li>Hormigas explosiblas</li>
+Piromania/zoologista
+<li>Granadas de mezcal</li>
+Alquimista/zoologista
+<li>insectos zombies(parasitos)</li>
+Necromancia/zoologia
