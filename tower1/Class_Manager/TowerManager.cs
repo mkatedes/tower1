@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using System;
 
 namespace tower1.Class_Manager
 {

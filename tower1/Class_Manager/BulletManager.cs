@@ -30,7 +30,7 @@ namespace tower1.Class_Manager
                     * bullet._speed;
 
                 // Check if the bullet has reached the target
-                if (Vector2.Distance(bullet._position, bullet._target._position) < 1f)
+                if (Vector2.Distance(bullet._position, bullet._target._position) < 3f)
                 {
                     // Destroy the bullet instance
                     bullet._target._health -= bullet._damage;

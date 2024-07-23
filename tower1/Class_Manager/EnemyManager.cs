@@ -26,9 +26,14 @@ namespace tower1.Class_Manager
 
         public void Update()
         {
-            foreach (Enemy enemy in _enemies)
+            for (int i = 0; i < _enemies.Count; i++)
             {
-               // enemy._position += Vector2.Normalize(enemy._target - enemy._position) * enemy._speed
+                Enemy enemy = _enemies[i];
+                if (enemy._health <= 0)
+                {
+                    _enemies.RemoveAt(i);
+                }
+                // enemy._position += Vector2.Normalize(enemy._target - enemy._position) * enemy._speed
             }
         }
 
