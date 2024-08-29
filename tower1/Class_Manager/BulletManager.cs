@@ -14,7 +14,7 @@ namespace tower1.Class_Manager
             _bullets = new List<Bullet>();
         }
 
-        public void AddBullet(Texture2D texture, Vector2 position, Enemy target, float speed, int damage)
+        public void AddBullet(List<Texture2D> texture, Vector2 position, Enemy target, float speed, int damage)
         {
             Bullet bullet = new Bullet(texture, position, target, speed, damage);
             _bullets.Add(bullet);
@@ -43,7 +43,7 @@ namespace tower1.Class_Manager
         {
             foreach (Bullet bullet in _bullets)
             {
-                spriteBatch.Draw(bullet._sprite, bullet._position, Color.White);
+                spriteBatch.Draw(bullet._sprite[0], bullet._position, Color.White);
             }
         }
     }

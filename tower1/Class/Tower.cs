@@ -1,10 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace tower1.Class
 {
-    internal class Tower : Entity
+    public class Tower : Entity
     {
         public int _damage;
         public int _range;
@@ -12,11 +13,11 @@ namespace tower1.Class
         public int _cost;
         public string _type;
         public string _description;
-        public Texture2D _bulletSprite; 
+        public List<Texture2D> _bulletSprite; 
         public double LastShootTime;
 
-        public Tower(string name, Texture2D sprite, Vector2 position, int damage, int range, 
-            double fireRate, int cost, string type, string description, Texture2D bulletSprite)
+        public Tower(string name, List<Texture2D> sprite, Vector2 position, int damage, int range, 
+            double fireRate, int cost, string type, string description, List<Texture2D> bulletSprite)
             : base(name, sprite, position)
         {
             _damage = damage;

@@ -17,8 +17,8 @@ namespace tower1.Class_Manager
             _towers = new List<Tower>();
         }
 
-        public void AddTower(string name, Texture2D sprite, Vector2 position, int damage, int range,
-            double fireRate, int cost, string type, string description, Texture2D bulletSprite)
+        public void AddTower(string name, List<Texture2D> sprite, Vector2 position, int damage, int range,
+            double fireRate, int cost, string type, string description, List<Texture2D> bulletSprite)
         {
             Tower tower = new Tower(name, sprite, position, damage, range,
                 fireRate, cost, type, description, bulletSprite);
@@ -48,7 +48,7 @@ namespace tower1.Class_Manager
         {
             foreach (Tower tower in _towers)
             {
-                spriteBatch.Draw(tower._sprite, tower._position, Color.White);
+                spriteBatch.Draw(tower._sprite[0], tower._position, Color.White);
             }
         }
 
