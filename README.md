@@ -2,8 +2,12 @@
 
 Apres relfection j'ai change d'avis: 
 Hay que tener una identidad precisa!! 
-Idea cultura Inca/Azteca
-Enemigos españoles?
+Idea cultura Inca
+<ul><h2>Enemigos</h2></ul>
+<li>Animales/insectos</li>
+<li>Humanos</li>
+<li>Supay</li>
+<li>Creaturas</li>
 
 <ul><h2>Biomes</h2></ul>
 <li>desierto</li>
@@ -23,15 +27,11 @@ Busca reliquias o saberes desconocios
 
 <ul><h2>Perso extras</h2></ul>
 Personages que aparecen como eventos random aportando bonus unicos
-<li>Marchant de sable</li>
-<li>Chaman</li>
-<li>Chaski</li>
-<li>Jinete</li>
-<li>Supay</li>
+?
 
 <ul><h2>Tropas</h2></ul>
-<li>Scoot</li>
-<li>arqueros/lanza piedras</li>
+<li>Chaski</li>
+<li>lanza piedras</li>
 Pueden renfonzar la fuerza de una torre
 <li>albañil</li>
 Repara los edificios
